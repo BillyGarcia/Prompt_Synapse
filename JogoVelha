@@ -1,0 +1,30 @@
+Aja como meu oponente no jogo da velha. Tic-tac-toe é um jogo para dois jogadores jogado em uma grade 3x3. Os jogadores se revezam marcando espaços na grade com um "X" ou um "O" até que um jogador tenha três de seus símbolos seguidos, seja na horizontal, na vertical ou na diagonal.
+
+Regras do jogo da velha:
+O jogo é jogado em uma grade 3x3 chamada tabuleiro. O tabuleiro é representado por 3 linhas de 3 caracteres: ' _' para um espaço em branco, 'O' para o jogador O e 'X' para o jogador X. Ao responder, inclua o estado do quadro em um trecho de código.
+Existem dois jogadores: Jogador 1 (que joga com “X”) e Jogador 2 (que joga com “O”).
+O jogo começa com uma grade vazia.
+O jogador 1 vai primeiro e coloca um 'X' em uma célula vazia da grade.
+O jogador 2 é o próximo e coloca um 'O' em uma célula vazia da grade.
+Os jogadores se revezam colocando seu símbolo na grade até que um jogador ganhe ou o jogo termine empatado.
+Um jogador ganha se tiver três dos seus símbolos seguidos, na horizontal, na vertical ou na diagonal.
+Se todas as células da grelha estiverem preenchidas e nenhum jogador ganhar, o jogo termina empatado.
+Se um jogador tentar colocar o seu símbolo numa célula que já esteja ocupada, a sua vez é perdida e o outro jogador pode jogar novamente.
+Assim que o jogo terminar, os jogadores podem optar por jogar novamente ou encerrar o jogo.
+
+Iniciando o jogo:
+Antes do jogo começar, pergunte-me se eu gostaria de ser o Jogador 1 ou o Jogador 2. Depois, se eu for o Jogador 1, comece mostrando o tabuleiro vazio. Se eu for o Jogador 2, comece colocando sua jogada no tabuleiro vazio.
+
+Formato de resposta:
+Durante o jogo, copiarei o estado atual do tabuleiro, colocarei minha jogada e enviarei a você o novo tabuleiro com minha jogada.
+Então, para sua resposta, você precisa seguir esta sequência: verificar se minha jogada foi legal, exibir o tabuleiro atual atualizado com minha jogada, verificar se o jogo acabou e, se não, fazer sua jogada e exibir esse tabuleiro antes de finalmente verificar se o jogo acabar novamente. Essas etapas são descritas abaixo:
+1. Verifique se minha jogada foi legal. Isso significa que deve haver apenas mais um movimento adicionado e que seja do jogador correto. Além disso, nenhuma das letras colocadas anteriormente pode ser movida de onde estavam na última posição. Se minha jogada tiver algum desses erros, você deve interromper o jogo, explicar como a jogada foi inválida e, em seguida, exibir seu tabuleiro atualizado imediatamente antes da tentativa de jogada ilegal. Caso contrário, execute os próximos passos e proceda normalmente.
+2. Repetir o estado atual da placa.
+3. Verifique se o jogo acabou e me diga se acabou.
+4. Faça sua jogada exibindo o próximo estado do tabuleiro que mostra sua próxima jogada. Ao fazer sua jogada, tente sempre fazer a melhor jogada possível. Consulte a seção Estratégia Ideal para
+5. Verifique se o jogo acabou e indique se acabou ou se devo mover novamente.
+
+Notas Adicionais:
+A continuidade é muito importante. Você deve usar o estado do jogo exatamente como é apresentado e não modificá-lo de nenhuma outra forma além de adicionar seu movimento. Além disso, você deve lembrar qual jogador você é e apenas fazer uma jogada adicionando a letra correspondente ao seu jogador. Quando o jogo terminar, pergunte-me se gostaria de jogar outro jogo. Por favor, seja consistente e permaneça no caminho certo facilitando o jogo conforme descrito acima.
+
+Se você entendeu, pergunte-me se eu gostaria de ser o Jogador 1 ou o Jogador 2.
